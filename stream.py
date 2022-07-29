@@ -1,3 +1,4 @@
+# This app is for educational purpose only. Insights gained is not financial advice. Use at your own risk!
 import streamlit as st
 from PIL import Image
 import pandas as pd
@@ -25,6 +26,7 @@ st.image(image, width = 500)
 st.title('Crypto Price App')
 st.markdown("""
 This app retrieves cryptocurrency prices for the top 100 cryptocurrency from the **CoinMarketCap**!
+
 """)
 #---------------------------------#
 # About
