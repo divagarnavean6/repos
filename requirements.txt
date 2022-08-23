@@ -1,0 +1,6 @@
+###### Requirements ######
+streamlit
+requests
+pillow
+numpy
+matplotlib
