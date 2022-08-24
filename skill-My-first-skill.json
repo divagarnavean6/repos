@@ -1,0 +1,655 @@
+{
+  "intents": [
+    {
+      "intent": "GoodByee",
+      "examples": [
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "end"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "stop"
+        },
+        {
+          "text": "Thanks"
+        }
+      ],
+      "description": "Good bye note"
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "holla"
+        },
+        {
+          "text": "/start"
+        }
+      ],
+      "description": "Greeting like Hello Hi etc."
+    },
+    {
+      "intent": "Hunger",
+      "examples": [
+        {
+          "text": "hunger"
+        },
+        {
+          "text": "Hungry"
+        },
+        {
+          "text": "I am Hungry"
+        }
+      ],
+      "description": "Synonyms from User related to Hungry ,Hunger etc."
+    },
+    {
+      "intent": "IhaveFoodLeft",
+      "examples": [
+        {
+          "text": "I have Food"
+        },
+        {
+          "text": "I have Food left"
+        }
+      ],
+      "description": "If User have Food they can provide us the details"
+    },
+    {
+      "intent": "InfoOnHunger",
+      "examples": [
+        {
+          "text": "agriculture"
+        },
+        {
+          "text": "Give information about hunger"
+        },
+        {
+          "text": "Info"
+        },
+        {
+          "text": "information"
+        },
+        {
+          "text": "information on"
+        },
+        {
+          "text": "quality production"
+        }
+      ],
+      "description": "All Information about Zero Hunger related a user can get by webhook integrated"
+    },
+    {
+      "intent": "Issues",
+      "examples": [
+        {
+          "text": "I am facing Issues"
+        },
+        {
+          "text": "Issues"
+        },
+        {
+          "text": "Still facing an Issue"
+        }
+      ],
+      "description": "Issue Response faced by user"
+    },
+    {
+      "intent": "Names",
+      "examples": [
+        {
+          "text": "Aditya"
+        },
+        {
+          "text": "Akshata"
+        },
+        {
+          "text": "Bikash"
+        },
+        {
+          "text": "Harish"
+        },
+        {
+          "text": "Harsha"
+        },
+        {
+          "text": "Kanha"
+        },
+        {
+          "text": "Nivetha"
+        },
+        {
+          "text": "Purvaja"
+        },
+        {
+          "text": "Raj"
+        },
+        {
+          "text": "Raj kumar"
+        },
+        {
+          "text": "Rosalin"
+        },
+        {
+          "text": "Shubham"
+        },
+        {
+          "text": "Subham"
+        },
+        {
+          "text": "Swetha"
+        }
+      ],
+      "description": "All User Names"
+    },
+    {
+      "intent": "Ratings",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "Meal was good, I will give you rating 1"
+        },
+        {
+          "text": "Meal was good, I will give you rating 2"
+        },
+        {
+          "text": "Meal was good, I will give you rating 3"
+        },
+        {
+          "text": "Meal was good, I will give you rating 4"
+        },
+        {
+          "text": "Meal was good, I will give you rating 5"
+        },
+        {
+          "text": "Meal was good, I will give you rating as 1"
+        },
+        {
+          "text": "Meal was good, I will give you rating as 2"
+        },
+        {
+          "text": "Meal was good, I will give you rating as 3"
+        },
+        {
+          "text": "Meal was good, I will give you rating as 4"
+        },
+        {
+          "text": "Meal was good, I will give you rating as 5"
+        }
+      ],
+      "description": "User Gives the Ratings out of 5"
+    },
+    {
+      "intent": "Zipcodes",
+      "examples": [
+        {
+          "text": "431401"
+        },
+        {
+          "text": "760005"
+        }
+      ],
+      "description": "All Area Zip codes available here for Data Analysis"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Address",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Delhi",
+          "synonyms": [
+            "delhi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": [
+            "mumbai"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Orissa",
+          "synonyms": [
+            "Odisha",
+            "Orissa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "City",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Berhampur",
+          "synonyms": [
+            "Berhampur",
+            "Brahmapur",
+            "Bramhapur"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "FacingIssues",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Facing_Issues",
+          "synonyms": [
+            "I am Having issues",
+            "Issues",
+            "Please connect me to any one to resolve my issues",
+            "Still facing some issues"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "GoodByeNotes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good_Bye_Notes",
+          "synonyms": [
+            "Bye",
+            "Good Bye",
+            "Thanks"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Hunger",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Hunger",
+          "synonyms": [
+            "Hunger",
+            "Hungry",
+            "I want food"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bikash",
+          "synonyms": [
+            "Bikash",
+            "Bikash Kumar",
+            "Bikash Kumar Sethy",
+            "Bikash Sethy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Purvajaa",
+          "synonyms": [
+            "Pujatha",
+            "Purvaja",
+            "Purvaja Joshi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "PinCode",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "760005",
+          "synonyms": [
+            "760005"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://www.un.org/sustainabledevelopment/hunger/",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1626928609900",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Still facing any issue",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You will be connected to our agent now for your issue resolution. Your wait time may vary based on our agent availability . Or you can contact us at 911 Helpline number. Thanks for your patience"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@FacingIssues || #Issues",
+      "dialog_node": "node_2_1626928609900",
+      "previous_sibling": "node_3_1627273370306"
+    },
+    {
+      "type": "standard",
+      "title": "User Address",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Booked for a meal, Your Food will be delivered in no time, Enjoy your meal"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Address || @City || @PinCode",
+      "dialog_node": "node_2_1626928658770",
+      "previous_sibling": "node_4_1626928648224"
+    },
+    {
+      "type": "standard",
+      "title": "User in Hunger",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sad to hear !!! But No problem ,Tell us your name and Location pin/zip code and your food will be right away..."
+              },
+              {
+                "text": "Sad to hear !!! But No problem ,Please Tell us your name and Location pin/zip code, we will deliver as soon as  possible..."
+              },
+              {
+                "text": "Sad to hear !!! But No problem , Please Tell us your name and Location pin/zip code, Food will be delivered in no time..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Hunger || @Hunger",
+      "dialog_node": "node_3_1626927652516",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "User gives Food left",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's Great!!! Thanks for Helping us, Please provide us the details of Food ,your name and location pin/zip code, We will collect that from You"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#IhaveFoodLeft",
+      "dialog_node": "node_3_1627273370306",
+      "previous_sibling": "node_9_1627246143112"
+    },
+    {
+      "type": "standard",
+      "title": "User Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Got your Name, Now please provide your pincode and Address for food delivery !"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "",
+      "dialog_node": "node_4_1626928648224",
+      "previous_sibling": "node_3_1626927652516"
+    },
+    {
+      "type": "standard",
+      "title": "Ratings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the Ratings!!! It helps us improve"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Ratings",
+      "dialog_node": "node_8_1627246074246",
+      "previous_sibling": "node_2_1626928658770"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks notess",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for reaching out to us !!! we are Happy to help here  !!! Please enjoy your meal and give us your rating how you felt"
+              },
+              {
+                "text": "Thanks, Enjoy the meal and have a nice day !!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#GoodByee || @GoodByeNotes",
+      "dialog_node": "node_9_1626942712127"
+    },
+    {
+      "type": "standard",
+      "title": "Info on Zero Hunger Agriculture quality production",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "Agriculture": "$agriculture"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#InfoOnHunger",
+      "dialog_node": "node_9_1627246143112",
+      "previous_sibling": "node_8_1627246074246"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Anything Else ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1627246143112",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1627246328294",
+      "previous_sibling": "response_9_1627246325712"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are the results !!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1627246143112",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_9_1627246325712"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome || #Greetings",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_9_1626942712127"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
